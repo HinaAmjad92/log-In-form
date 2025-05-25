@@ -56,8 +56,6 @@ signIn()async{
             ElevatedButton(onPressed: (()=>signIn()), child: Text("Login")),
             SizedBox(height: 30,),
             ElevatedButton(onPressed: (()=>Get.to(Signup())), child: Text("Register Now !")),
-            SizedBox(height: 30,),
-            ElevatedButton(onPressed: (()=>Get.to(forgot())), child: Text("Forgot Password ?"))
           ],
         ),
       )
