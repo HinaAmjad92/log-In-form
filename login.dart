@@ -21,18 +21,7 @@ signIn()async{
   setState(() {
     isloading=true;
   });
-  // try{
     await FirebaseAuth.instance.signInWithEmailAndPassword(email: email.text, password: password.text);
-
-
- //  }on FirebaseAuthException catch(e){
- // Get.snackbar("error msg", e.code);
- //  }catch(e){
- //    Get.snackbar("error msg", e.toString()) ;
- //  }
- //  setState(() {
- //    isloading=false;
- //  });
 
 }
 
@@ -47,9 +36,6 @@ signIn()async{
             TextField(controller: email,
             decoration:   InputDecoration(hintText: 'Enter Your Email'),
             ),
-          // validator: (value){
-          //   if
-          // }
           TextField(controller: password,
             decoration:   InputDecoration(hintText: 'Enter Your Password'),
           ),
